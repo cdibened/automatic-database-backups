@@ -4,7 +4,6 @@
 # https://github.com/kbaum/heroku-database-backups
 # p.s. THANKS kbaum <3
 
-
 # terminate script as soon as any command fails
 set -e
 
