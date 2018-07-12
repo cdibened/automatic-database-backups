@@ -5,18 +5,18 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "backup":"bash ./bin/backup.sh",
+    "backup": "bash ./bin/backup.sh",
     "postinstall": "npm run backup"
 
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dwyl/automatic-postgres-backups-on-heroku-deployment.git"
+    "url": "git+https://github.com/cdibened/automatic-postgres-backups-on-heroku-deployment.git"
   },
   "author": "naazy",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dwyl/automatic-postgres-backups-on-heroku-deployment/issues"
+    "url": "https://github.com/cdibened/automatic-postgres-backups-on-heroku-deployment/issues"
   },
-  "homepage": "https://github.com/dwyl/automatic-postgres-backups-on-heroku-deployment#readme"
+  "homepage": "https://github.com/cdibened/automatic-postgres-backups-on-heroku-deployment#readme"
 }
