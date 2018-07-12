@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "backup": "bash ./bin/backup.sh",
-    "postinstall": "npm run backup"
-
+    "backup": "bash ./bin/backup.sh"
   },
   "repository": {
     "type": "git",
