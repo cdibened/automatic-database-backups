@@ -33,7 +33,7 @@ BACKUP_FILE_NAME="$(date +"%Y-%m-%d-%H-%M")-$APP-$DATABASE.dump"
 # the next curl command logs us in with the heroku api key (i think)
 curl -H "Accept: application/json" -n https://api.heroku.com/apps
 ./.heroku/bin/heroku pg:backups capture $DATABASE --app $APP
-curl -o $BACKUP_FILE_NAME `./vendor/heroku-toolbelt/bin/heroku pg:backups:url --app $APP`
+curl -o $BACKUP_FILE_NAME `./.heroku/bin/heroku pg:backups:url --app $APP`
 gzip $BACKUP_FILE_NAME
 /tmp/aws/bin/aws s3 cp $BACKUP_FILE_NAME.gz s3://$S3_BUCKET_PATH/$APP/$DATABASE/$BACKUP_FILE_NAME.gz --region $AWS_DEFAULT_REGION
 echo "backup $BACKUP_FILE_NAME complete"
